@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  max-width: 90%;
+  max-height: 100vh;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 300px 200px 200px;
+  gap: 20px;
+}
+h2 {
+  font-weight: 500;
+  font-size: x-large;
+  letter-spacing: -1.5px;
+  line-height: 20px;
+}
+h1 {
+  font-weight: 600;
+  font-size: xxx-large;
+  letter-spacing: -1.5px;
+  line-height: 50px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+p {
+  font-weight: 300;
+}
+.card {
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.first-column {
+  display: flex;
+  flex-direction: column;
+  grid-row: span 3;
+  gap: 20px;
+}
+.first-column .inner-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  height: 50%;
+}
+.first-column .inner-card:first-child {
+  background-color: #faeee2;
+  justify-content: center;
+  align-items: center;
+}
+.first-column .inner-card:last-child {
+  background-color: #ffcc69;
+  justify-content: space-between;
+  align-items: start;
+}
+.inner-card span {
+  color: #7956d6;
+  font-style: italic;
+}
+
+.card-main {
+  grid-column: span 2;
+  background-color: #7651dc;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.card-main h1 {
+  text-align: center;
+}
+.card-main img {
+  height: 30px;
+}
+.card-main span {
+  color: #ffcc69;
+}
+
+.card-social {
+  background-color: #dcd1fc;
+  grid-row: span 2;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.card-social img {
+  max-width: unset;
+  max-height: unset;
+  width: 170%;
+  height: 60%;
+  margin-left: 75%;
+}
+
+.card-multi {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+.card-multi img {
+  max-width: unset;
+  height: 30%;
+  width: 130%;
+  margin-left: 40%;
+}
+.card-schedule {
+  background-color: #ffcc69;
+  overflow: hidden;
+  align-items: center;
+}
+.card-schedule h2 {
+  text-align: start;
+}
+.card-schedule img {
+  max-height: unset;
+  height: 150%;
+}
+.card-growth {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.card-growth img {
+  height: 35%;
+}
+
+.card-wide {
+  padding: 20px;
+  border-radius: 15px;
+  gap: 15px;
+  grid-column: span 2;
+  background-color: #7651dc;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card-wide h2 {
+  color: white;
+  font-size: xx-large;
+  line-height: 33px;
+}
